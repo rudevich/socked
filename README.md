@@ -13,15 +13,10 @@ var router = {
     },
     socked = new Socked(function(err){
         if (err) {
-           // console.log("SOCKED: error", err);
             return false;
-        }// else console.log("SOCKED: opened");
+        }
         //send auth message
-        that.socked.send('authorize',{
-            userID : userDetails.userID,
-            sessionID: readCookie("sessionID")
-        });
-        //
+        that.socked.send('authorize',{"hi":"bro"});
     }, "responsibleWSURLfromRootOfYourServer", this.router);
 ```
 
