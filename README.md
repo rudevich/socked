@@ -22,7 +22,7 @@ var router = {
             sessionID: readCookie("sessionID")
         });
         //
-    }, "notifications", this.router);
+    }, "responsibleWSURLfromRootOfYourServer", this.router);
 ```
 
 
